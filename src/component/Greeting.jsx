@@ -1,8 +1,19 @@
+import { useSelector, useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+
+import { fetchGreeting } from '../redux/reducer/greetingsReducer';
+
 const Greeting = () => {
-  const name = 'Hello Microverse';
+  const dispatch = useDispatch();
+  const greeting = useSelector(({ greetingReducer }) => greetingReducer.message);
+
+  useEffect(() => {
+    dispatch(fetchGreeting());
+  }, []);
+
   return (
     <div>
-      <h1>{name}</h1>
+      <h1>{greeting && greeting.message}</h1>
     </div>
   );
 };

@@ -12,8 +12,8 @@ This is a practice project to implement a connection between a Ruby on Rails bac
      <td>Greeting</td>
   </tr>
   <tr>
-    <td><img src="./src/assets/images/GreetingPage.jpeg" width=1000 height=100></td>
-    <td><img src="./src/assets/images/HomePage.jpeg" width=1000 height=100></td>
+    <td><img src="./src/assets/images/GreetingPage.jpeg"></td>
+    <td><img src="./src/assets/images/HomePage.jpeg"></td>
   </tr>
  </table>
 # Getting Started

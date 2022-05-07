@@ -4,11 +4,12 @@ import React from 'react';
 
 class Home extends React.Component {
   render() {
+    const displayText = 'Rails React Greeting App';
     return (
       <>
         <div className="flex justify-center items-center">
           <div className="mt-64">
-            <h1 className="text--2xl md:text-4xl font-semibold text-teal-500">Rails React Greeting App</h1>
+            <h1 className="text--2xl md:text-4xl font-semibold text-purple-600">{displayText}</h1>
           </div>
         </div>
       </>
